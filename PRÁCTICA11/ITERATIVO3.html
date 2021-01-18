@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>
+let tasks = [
+ {
+   'name'     : 'Buy milk from the shop',
+   'duration' : 20,
+   'priority' : 1
+ },
+ {
+   'name'     : 'Clean the house',
+   'duration' : 120,
+   'priority' : 3
+ },
+ {
+   'name'     : 'Study JS functions',
+   'duration' : 180,
+   'priority' : 1
+ },
+]
+
+let task_names=[];
+var total=0;
+for(let i=0; i<3;i++){
+    task_names.push(tasks[i].duration);
+    total=total+tasks[i].duration;
+}
+
+console . log (task_names)
+console . log ("Total: ",total);
+</script>
+</body > 
+</html >
