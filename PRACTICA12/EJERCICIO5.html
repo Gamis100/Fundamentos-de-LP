@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+	arr = [
+	{ name :'luna', sex :'f', age :7 , species :'dog'},
+	{ name :'jimmy', sex :'m', age :122 , species :'human'},
+	{ name :'snoop', sex :'m', age :60 , species :'human'},
+	{ name :'jennifer', sex :'f', age :250 , species :'human'},
+	{ name :'yeller', sex:'f', age :20 , species :'dog'},
+	];
+
+const promedio = arr.filter (x => x.species === 'dog').map(x => x.age).reduce((sum, age, i, arr) => sum + age/arr.length, 0);
+console.log(promedio);	
+</script>
+</body > 
+</html >
