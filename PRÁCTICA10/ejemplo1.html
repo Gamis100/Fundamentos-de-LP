@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+Array . prototype . myMap = function (f1) {
+newArray = [];
+for (i = 0; i < this . length ; i ++) {
+newArray . push (f1( this [i]) );
+}
+return newArray ;
+};
+var numbers5 = numbers . myMap (x => x*2) ;
+console . log ( numbers5 );
+</script>
+</body > 
+</html >
